@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "auraplexus",
+	"version": "${version}",
+	"name": "Aura Plexus",
+	"description": "Thaumcraft inspired mod for Fabric",
+	"authors": [
+		"Yahton"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/LocalMachineOnLinux/AuraPlexus"
+	},
+	"license": "MIT License",
+	"icon": "assets/auraplexus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"auraplexus.AuraPlexus"
+		],
+		"client": [
+			"auraplexus.AuraPlexusClient"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

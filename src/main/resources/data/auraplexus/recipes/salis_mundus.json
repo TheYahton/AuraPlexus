@@ -1,0 +1,27 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+        "item": "minecraft:redstone"
+        },
+        {
+        "item": "minecraft:flint"
+        },
+        {
+        "item": "minecraft:bowl"
+        },
+        {
+        "item": "auraplexus:crystal_essence"
+        },
+        {
+        "item": "auraplexus:crystal_essence"
+        },
+        {
+        "item": "auraplexus:crystal_essence"
+        }
+    ],
+    "result": {
+        "item": "auraplexus:salis_mundus",
+    "count": 1
+    }
+}
