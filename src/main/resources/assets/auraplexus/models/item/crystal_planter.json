@@ -1,6 +1,5 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "auraplexus:item/crystal_planter"
-    }
+    "parent": "auraplexus:block/ore_crystal"
 }
+
+

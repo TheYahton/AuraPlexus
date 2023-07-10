@@ -8,7 +8,7 @@
 		"Yahton"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "",
 		"sources": "https://github.com/LocalMachineOnLinux/AuraPlexus"
 	},
 	"license": "MIT License",
@@ -25,7 +25,7 @@
 	"mixins": [],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
+		"minecraft": "~1.20",
 		"java": ">=17",
 		"fabric-api": "*"
 	},

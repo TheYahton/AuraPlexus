@@ -6,8 +6,11 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class SalisMundus extends Item {
     public SalisMundus(Settings settings) {
@@ -16,22 +19,31 @@ public class SalisMundus extends Item {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        Block clickedBlock = context.getWorld().getBlockState(context.getBlockPos()).getBlock();
+        // For more comfort
+        World world = context.getWorld();
+        BlockPos pos = context.getBlockPos();
+        ItemStack stack = context.getStack();
+        Block clickedBlock = world.getBlockState(pos).getBlock();
+
         if (clickedBlock == Blocks.CRAFTING_TABLE) {
-            context.getStack().setCount(context.getStack().getCount()-1);
-            context.getWorld().setBlockState(context.getBlockPos(), ModBlocks.ARCANE_WORKBENCH.getDefaultState());
+            stack.setCount(stack.getCount()-1); // decrease items count by 1
+            world.setBlockState(pos, ModBlocks.ARCANE_WORKBENCH.getDefaultState()); // Replace crafting table by arcane workbench
+
             return ActionResult.SUCCESS;
         }
+
         else if (clickedBlock == Blocks.BOOKSHELF) {
-            context.getStack().setCount(context.getStack().getCount()-1);
-            context.getWorld().removeBlock(context.getBlockPos(), false);
-            int x = context.getBlockPos().getX();
-            int y = context.getBlockPos().getY();
-            int z = context.getBlockPos().getZ();
-            context.getWorld().spawnEntity(new ItemEntity(context.getWorld(), x, y, z,
-                    ModItems.THAUMONOMICON.getDefaultStack(), 0, 0, 0));
+            double x = context.getBlockPos().getX()+0.5; // Very...
+            double y = context.getBlockPos().getY(); // Very...
+            double z = context.getBlockPos().getZ()+0.5; // Very... boring
+            stack.setCount(stack.getCount()-1); // decrease items count by 1
+            world.removeBlock(pos, false); // delete bookshelf
+            world.spawnEntity(new ItemEntity(world, x, y, z,
+                    ModItems.THAUMONOMICON.getDefaultStack())); // Spawn Thaumonomicon at pos.
+
             return ActionResult.SUCCESS;
         }
+
         else {
             return ActionResult.PASS;
         }

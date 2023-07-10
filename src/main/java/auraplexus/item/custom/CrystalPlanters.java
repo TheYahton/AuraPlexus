@@ -8,10 +8,11 @@ import net.minecraft.nbt.NbtCompound;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import static auraplexus.block.ModBlocks.CRYSTAL_ORE;
+import static auraplexus.block.ModBlocks.ORE_CRYSTAL;
+import static auraplexus.item.custom.Aspects.aspectColors;
 
 public class CrystalPlanters {
-    public static Item CRYSTAL_PLANTER = new CrystalPlanter(CRYSTAL_ORE, new FabricItemSettings());
+    public static Item CRYSTAL_PLANTER = new CrystalPlanter(ORE_CRYSTAL, new FabricItemSettings());
 
 
     public static ItemStack group = CRYSTAL_PLANTER.getDefaultStack();
@@ -21,7 +22,7 @@ public class CrystalPlanters {
         ArrayList<ItemStack> stacks = new ArrayList<>();
         NbtCompound nbt = new NbtCompound();
 
-        for(int i = 0; i < 6; i++) {
+        for (int i = 0; i < aspectColors.size(); i++) {
             nbt.putInt("aspect", i);
             group.setNbt(nbt);
             stacks.add(group.copy());

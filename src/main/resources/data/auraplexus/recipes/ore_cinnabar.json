@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "ore",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "auraplexus:ore_cinnabar"
+  },
+  "result": "auraplexus:quicksilver"
+}

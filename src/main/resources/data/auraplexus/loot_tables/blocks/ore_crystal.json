@@ -1,0 +1,149 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "auraplexus:crystal_essence",
+            "functions": [
+                {
+                    "function": "set_nbt",
+                    "tag": "{aspect:0}"
+                }
+            ]
+        }
+        ],
+        "conditions": [
+        {
+            "condition": "minecraft:block_state_property",
+            "block": "auraplexus:ore_crystal",
+            "properties": {
+                "aspect": "0"
+            }
+        }
+        ]
+    },
+    {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "auraplexus:crystal_essence",
+                "functions": [
+                    {
+                        "function": "set_nbt",
+                        "tag": "{aspect:1}"
+                    }
+                ]
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:block_state_property",
+                "block": "auraplexus:ore_crystal",
+                "properties": {
+                    "aspect": "1"
+                }
+            }
+        ]
+    },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "auraplexus:crystal_essence",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{aspect:2}"
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "auraplexus:ore_crystal",
+                    "properties": {
+                        "aspect": "2"
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "auraplexus:crystal_essence",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{aspect:3}"
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "auraplexus:ore_crystal",
+                    "properties": {
+                        "aspect": "3"
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "auraplexus:crystal_essence",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{aspect:4}"
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "auraplexus:ore_crystal",
+                    "properties": {
+                        "aspect": "4"
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "auraplexus:crystal_essence",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{aspect:5}"
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "auraplexus:ore_crystal",
+                    "properties": {
+                        "aspect": "5"
+                    }
+                }
+            ]
+        }
+    ]
+}

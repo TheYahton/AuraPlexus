@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "auraplexus:crystal_ore"
+        "auraplexus:ore_crystal",
+        "auraplexus:ore_amber",
+        "auraplexus:ore_cinnabar",
+        "auraplexus:ore_quartz"
     ]
 }

@@ -21,7 +21,7 @@ public class CrystalEssences {
         NbtCompound nbt = new NbtCompound();
 
         for(int i = 0; i< intAspectColor.size(); i++) {
-            nbt.putString("aspect", intAspectColor.get(i));
+            nbt.putInt("aspect", i);
             group.setNbt(nbt);
             stacks.add(group.copy());
         }

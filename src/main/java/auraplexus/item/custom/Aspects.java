@@ -3,7 +3,7 @@ package auraplexus.item.custom;
 import java.util.HashMap;
 
 public class Aspects {
-    public static HashMap<String, Integer> aspectColors = setAspectColors();
+    public static HashMap<Integer, Integer> aspectColors = setAspectColors();
 
     public static HashMap<Integer, String> intAspectColor = setIntAspect();
 
@@ -20,20 +20,20 @@ public class Aspects {
         return intAspect;
     }
 
-    public static HashMap<String, Integer> setAspectColors() {
-        HashMap<String, Integer> aspectColors = new HashMap<>();
+    public static HashMap<Integer, Integer> setAspectColors() {
+        HashMap<Integer, Integer> aspectColors = new HashMap<>();
 
-        aspectColors.put("aer", 0xffff7e);
-        aspectColors.put("terra", 0x56c000);
-        aspectColors.put("ignis", 0xff5a01);
-        aspectColors.put("aqua", 0x3cd4fc);
-        aspectColors.put("ordo", 0xd5d4ec);
-        aspectColors.put("perditio", 0x404040);
+        aspectColors.put(0, 0xffff7e);
+        aspectColors.put(1, 0x56c000);
+        aspectColors.put(2, 0xff5a01);
+        aspectColors.put(3, 0x3cd4fc);
+        aspectColors.put(4, 0xd5d4ec);
+        aspectColors.put(5, 0x404040);
 
         return aspectColors;
     }
 
-    public static int getAspectColor(String aspectName) {
+    public static int getAspectColor(Integer aspectName) {
         return aspectColors.getOrDefault(aspectName, 0xFFFFFF);
     }
 }

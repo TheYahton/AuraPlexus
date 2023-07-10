@@ -3,6 +3,7 @@ package auraplexus;
 import auraplexus.block.ModBlocks;
 import auraplexus.item.ModItemGroup;
 import auraplexus.item.ModItems;
+import auraplexus.recipe.ModRecipes;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class AuraPlexus implements ModInitializer {
         ModItemGroup.registerItemGroups();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+        ModRecipes.registerRecipes();
     }
 }
