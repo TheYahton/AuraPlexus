@@ -1,11 +1,9 @@
 package auraplexus.item.custom;
 
 import auraplexus.materials.ThaumiumArmorMaterial;
+import auraplexus.materials.ThaumiumToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 
 public class Thaumium {
     public static final Item INGOT_THAUMIUM = new Item(new FabricItemSettings());
@@ -18,9 +16,9 @@ public class Thaumium {
     public static final Item THAUMIUM_BOOTS = new ArmorItem(THAUMIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings());
 
 
-    public static final Item THAUMIUM_SWORD = new Item(new FabricItemSettings());
-    public static final Item THAUMIUM_PICKAXE = new Item(new FabricItemSettings());
-    public static final Item THAUMIUM_AXE = new Item(new FabricItemSettings());
-    public static final Item THAUMIUM_SHOVEL = new Item(new FabricItemSettings());
-    public static final Item THAUMIUM_HOE = new Item(new FabricItemSettings());
+    public static final Item THAUMIUM_SWORD = new SwordItem(ThaumiumToolMaterial.INSTANCE, 3, -2.4F, new Item.Settings());
+    public static final Item THAUMIUM_PICKAXE = new PickaxeItem(ThaumiumToolMaterial.INSTANCE, 3, -2.4F, new Item.Settings());
+    public static final Item THAUMIUM_AXE = new AxeItem(ThaumiumToolMaterial.INSTANCE, 3, -2.4F, new Item.Settings());
+    public static final Item THAUMIUM_SHOVEL = new ShovelItem(ThaumiumToolMaterial.INSTANCE, 3, -2.4F, new Item.Settings());
+    public static final Item THAUMIUM_HOE = new HoeItem(ThaumiumToolMaterial.INSTANCE, 3, -2.4F, new Item.Settings());
 }
