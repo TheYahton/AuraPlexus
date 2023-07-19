@@ -68,6 +68,10 @@ public class ModItems {
         registerItem("thaumium_axe", THAUMIUM_AXE);
         registerItem("thaumium_shovel", THAUMIUM_SHOVEL);
         registerItem("thaumium_hoe", THAUMIUM_HOE);
+        registerItem("thaumium_helmet", THAUMIUM_HELMET);
+        registerItem("thaumium_chestplate", THAUMIUM_CHESTPLATE);
+        registerItem("thaumium_leggings", THAUMIUM_LEGGINGS);
+        registerItem("thaumium_boots", THAUMIUM_BOOTS);
 
     }
 
@@ -89,6 +93,10 @@ public class ModItems {
         addToItemGroup(THAUMIUM_AXE);
         addToItemGroup(THAUMIUM_SHOVEL);
         addToItemGroup(THAUMIUM_HOE);
+        addToItemGroup(THAUMIUM_HELMET);
+        addToItemGroup(THAUMIUM_CHESTPLATE);
+        addToItemGroup(THAUMIUM_LEGGINGS);
+        addToItemGroup(THAUMIUM_BOOTS);
     }
 
     public static void registerModItems() {

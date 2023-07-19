@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "auraplexus:ingot_thaumium"
+    }
+  },
+  "result": {
+    "item": "auraplexus:thaumium_chestplate",
+    "count": 1
+  }
+}
+
