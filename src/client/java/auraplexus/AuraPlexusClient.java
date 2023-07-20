@@ -1,6 +1,7 @@
 package auraplexus;
 
 import auraplexus.block.ModBlocks;
+import auraplexus.block.custom.Crucible;
 import auraplexus.block.custom.OreCrystal;
 import auraplexus.item.ModItems;
 import net.fabricmc.api.ClientModInitializer;
@@ -22,5 +23,12 @@ public class AuraPlexusClient implements ClientModInitializer {
         ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex)
                 -> getAspectColor(state.get(OreCrystal.ASPECT)),
                 ModBlocks.ORE_CRYSTAL); // set crystal_ore color by BlockState
+
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex)
+                        -> {
+//        return state.get(Crucible.WATERED) ? 1 : 0xFFFFFF;
+            return 0x0000AA;
+        },
+                ModBlocks.CRUCIBLE); // set crucible color by BlockState
     }
 }

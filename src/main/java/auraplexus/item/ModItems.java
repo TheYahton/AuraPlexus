@@ -20,7 +20,7 @@ import java.util.Collection;
 import static auraplexus.block.ModBlocks.ARCANE_WORKBENCH;
 import static auraplexus.item.custom.CrystalEssences.CRYSTAL_ESSENCES;
 import static auraplexus.item.custom.CrystalPlanters.CRYSTAL_PLANTERS;
-import static auraplexus.item.custom.Thaumium.*;
+import static auraplexus.item.custom.Miraculum.*;
 
 public class ModItems {
 
@@ -28,13 +28,14 @@ public class ModItems {
     public static final Item SALIS_MUNDUS =  new SalisMundus(new FabricItemSettings());
     public static final Item ARCANE_WORKBENCH_ITEM = new BlockItem(ARCANE_WORKBENCH, new FabricItemSettings());
     public static final Item CRYSTAL_PLANTER = CrystalPlanters.CRYSTAL_PLANTER;
-    public static final Item THAUMONOMICON =  new Item(new FabricItemSettings());
+    public static final Item MIRACULONOMICON =  new Item(new FabricItemSettings());
     public static final Item ORE_AMBER = new BlockItem(ModBlocks.ORE_AMBER, new FabricItemSettings());
     public static final Item AMBER = new Item(new FabricItemSettings());
     public static final Item ORE_CINNABAR = new BlockItem(ModBlocks.ORE_CINNABAR, new FabricItemSettings());
     public static final Item QUICKSILVER = new Item(new FabricItemSettings());
     public static final Item ORE_QUARTZ = new BlockItem(ModBlocks.ORE_QUARTZ, new FabricItemSettings());
-    public static final Item THAUMOMETER = new Item(new FabricItemSettings());
+    public static final Item MIRACULOMETER = new Item(new FabricItemSettings());
+    public static final Item CRUCIBLE = new BlockItem(ModBlocks.CRUCIBLE, new FabricItemSettings());
 
 
     private static void registerItem(String name, Item item) {
@@ -55,23 +56,24 @@ public class ModItems {
         registerItem("salis_mundus", SALIS_MUNDUS);
         registerItem("arcane_workbench", ARCANE_WORKBENCH_ITEM);
         registerItem("crystal_planter", CRYSTAL_PLANTER);
-        registerItem("thaumonomicon", THAUMONOMICON);
+        registerItem("miraculonomicon", MIRACULONOMICON);
         registerItem("ore_amber", ORE_AMBER);
         registerItem("amber", AMBER);
         registerItem("ore_cinnabar", ORE_CINNABAR);
         registerItem("quicksilver", QUICKSILVER);
         registerItem("ore_quartz", ORE_QUARTZ);
-        registerItem("thaumometer", THAUMOMETER);
-        registerItem("ingot_thaumium", INGOT_THAUMIUM);
-        registerItem("thaumium_sword", THAUMIUM_SWORD);
-        registerItem("thaumium_pickaxe", THAUMIUM_PICKAXE);
-        registerItem("thaumium_axe", THAUMIUM_AXE);
-        registerItem("thaumium_shovel", THAUMIUM_SHOVEL);
-        registerItem("thaumium_hoe", THAUMIUM_HOE);
-        registerItem("thaumium_helmet", THAUMIUM_HELMET);
-        registerItem("thaumium_chestplate", THAUMIUM_CHESTPLATE);
-        registerItem("thaumium_leggings", THAUMIUM_LEGGINGS);
-        registerItem("thaumium_boots", THAUMIUM_BOOTS);
+        registerItem("miraculometer", MIRACULOMETER);
+        registerItem("miraculum_ingot", MIRACULUM_INGOT);
+        registerItem("miraculum_sword", MIRACULUM_SWORD);
+        registerItem("miraculum_pickaxe", MIRACULUM_PICKAXE);
+        registerItem("miraculum_axe", MIRACULUM_AXE);
+        registerItem("miraculum_shovel", MIRACULUM_SHOVEL);
+        registerItem("miraculum_hoe", MIRACULUM_HOE);
+        registerItem("miraculum_helmet", MIRACULUM_HELMET);
+        registerItem("miraculum_chestplate", MIRACULUM_CHESTPLATE);
+        registerItem("miraculum_leggings", MIRACULUM_LEGGINGS);
+        registerItem("miraculum_boots", MIRACULUM_BOOTS);
+        registerItem("crucible", CRUCIBLE);
 
     }
 
@@ -80,23 +82,24 @@ public class ModItems {
         addToItemGroup(SALIS_MUNDUS);
         addToItemGroup(ARCANE_WORKBENCH_ITEM);
         addToItemGroup(CRYSTAL_PLANTERS); // add crystal_planters with all aspects to ItemGroup
-        addToItemGroup(THAUMONOMICON);
+        addToItemGroup(MIRACULONOMICON);
         addToItemGroup(ORE_AMBER);
         addToItemGroup(AMBER);
         addToItemGroup(ORE_CINNABAR);
         addToItemGroup(QUICKSILVER);
         addToItemGroup(ORE_QUARTZ);
-        addToItemGroup(THAUMOMETER);
-        addToItemGroup(INGOT_THAUMIUM);
-        addToItemGroup(THAUMIUM_SWORD);
-        addToItemGroup(THAUMIUM_PICKAXE);
-        addToItemGroup(THAUMIUM_AXE);
-        addToItemGroup(THAUMIUM_SHOVEL);
-        addToItemGroup(THAUMIUM_HOE);
-        addToItemGroup(THAUMIUM_HELMET);
-        addToItemGroup(THAUMIUM_CHESTPLATE);
-        addToItemGroup(THAUMIUM_LEGGINGS);
-        addToItemGroup(THAUMIUM_BOOTS);
+        addToItemGroup(MIRACULOMETER);
+        addToItemGroup(MIRACULUM_INGOT);
+        addToItemGroup(MIRACULUM_SWORD);
+        addToItemGroup(MIRACULUM_PICKAXE);
+        addToItemGroup(MIRACULUM_AXE);
+        addToItemGroup(MIRACULUM_SHOVEL);
+        addToItemGroup(MIRACULUM_HOE);
+        addToItemGroup(MIRACULUM_HELMET);
+        addToItemGroup(MIRACULUM_CHESTPLATE);
+        addToItemGroup(MIRACULUM_LEGGINGS);
+        addToItemGroup(MIRACULUM_BOOTS);
+        addToItemGroup(CRUCIBLE);
     }
 
     public static void registerModItems() {

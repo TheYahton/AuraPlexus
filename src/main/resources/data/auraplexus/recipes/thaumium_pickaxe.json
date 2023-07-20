@@ -7,14 +7,14 @@
   ],
   "key": {
     "I": {
-      "item": "auraplexus:ingot_thaumium"
+      "item": "auraplexus:miraculum_ingot"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "auraplexus:thaumium_pickaxe",
+    "item": "auraplexus:miraculum_pickaxe",
     "count": 1
   }
 }

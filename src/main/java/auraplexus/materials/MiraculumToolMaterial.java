@@ -1,12 +1,12 @@
 package auraplexus.materials;
 
-import auraplexus.item.custom.Thaumium;
+import auraplexus.item.custom.Miraculum;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class ThaumiumToolMaterial implements ToolMaterial {
+public class MiraculumToolMaterial implements ToolMaterial {
 
-    public static final ThaumiumToolMaterial INSTANCE = new ThaumiumToolMaterial();
+    public static final MiraculumToolMaterial INSTANCE = new MiraculumToolMaterial();
 
     @Override
     public int getDurability() {
@@ -35,6 +35,6 @@ public class ThaumiumToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Thaumium.INGOT_THAUMIUM);
+        return Ingredient.ofItems(Miraculum.MIRACULUM_INGOT);
     }
 }

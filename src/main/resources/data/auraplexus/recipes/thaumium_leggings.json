@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "auraplexus:ingot_thaumium"
+      "item": "auraplexus:miraculum_ingot"
     }
   },
   "result": {
-    "item": "auraplexus:thaumium_leggings",
+    "item": "auraplexus:miraculum_leggings",
     "count": 1
   }
 }

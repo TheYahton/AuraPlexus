@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "watered=false": { "model": "auraplexus:block/crucible" },
+    "watered=true": { "model": "auraplexus:block/water_crucible"}
+  }
+}

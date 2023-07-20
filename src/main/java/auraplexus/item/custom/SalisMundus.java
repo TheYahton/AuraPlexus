@@ -25,21 +25,28 @@ public class SalisMundus extends Item {
         ItemStack stack = context.getStack();
         Block clickedBlock = world.getBlockState(pos).getBlock();
 
-        if (clickedBlock == Blocks.CRAFTING_TABLE) {
-            stack.setCount(stack.getCount()-1); // decrease items count by 1
-            world.setBlockState(pos, ModBlocks.ARCANE_WORKBENCH.getDefaultState()); // Replace crafting table by arcane workbench
-
-            return ActionResult.SUCCESS;
-        }
-
-        else if (clickedBlock == Blocks.BOOKSHELF) {
+        if (clickedBlock == Blocks.BOOKSHELF) {
             double x = context.getBlockPos().getX()+0.5; // Very...
             double y = context.getBlockPos().getY(); // Very...
             double z = context.getBlockPos().getZ()+0.5; // Very... boring
             stack.setCount(stack.getCount()-1); // decrease items count by 1
             world.removeBlock(pos, false); // delete bookshelf
             world.spawnEntity(new ItemEntity(world, x, y, z,
-                    ModItems.THAUMONOMICON.getDefaultStack())); // Spawn Thaumonomicon at pos.
+                    ModItems.MIRACULONOMICON.getDefaultStack())); // Spawn Thaumonomicon at pos.
+
+            return ActionResult.SUCCESS;
+        }
+
+        else if (clickedBlock == Blocks.CRAFTING_TABLE) {
+            stack.setCount(stack.getCount()-1); // decrease items count by 1
+            world.setBlockState(pos, ModBlocks.ARCANE_WORKBENCH.getDefaultState()); // Replace crafting table by arcane workbench
+
+            return ActionResult.SUCCESS;
+        }
+
+        else if (clickedBlock == Blocks.CAULDRON) {
+            stack.setCount(stack.getCount()-1); // decrease items count by 1
+            world.setBlockState(pos, ModBlocks.CRUCIBLE.getDefaultState()); // Replace crafting table by arcane workbench
 
             return ActionResult.SUCCESS;
         }

@@ -18,7 +18,7 @@ public class ModItemGroup {
 
     public static void registerItemGroups() {
         Registry.register(Registries.ITEM_GROUP, AURAPLEXUS, FabricItemGroup.builder()
-       .icon(() -> new ItemStack(ModItems.THAUMONOMICON))
+       .icon(() -> new ItemStack(ModItems.MIRACULONOMICON))
        .displayName(Text.translatable("auraplexus.itemgroup"))
        .build());
     }

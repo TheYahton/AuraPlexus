@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "auraplexus:item/thaumium_sword"
+    "layer0": "auraplexus:item/miraculum_shovel"
   }
 }

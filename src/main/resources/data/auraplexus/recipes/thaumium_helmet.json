@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "auraplexus:ingot_thaumium"
+      "item": "auraplexus:miraculum_ingot"
     }
   },
   "result": {
-    "item": "auraplexus:thaumium_helmet",
+    "item": "auraplexus:miraculum_helmet",
     "count": 1
   }
 }

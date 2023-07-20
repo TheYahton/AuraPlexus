@@ -2,6 +2,7 @@ package auraplexus.block;
 
 import auraplexus.AuraPlexus;
 import auraplexus.block.custom.ArcaneWorkbench;
+import auraplexus.block.custom.Crucible;
 import auraplexus.block.custom.OreCrystal;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -17,6 +18,7 @@ public class ModBlocks {
     public static final Block ORE_AMBER = new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
     public static final Block ORE_CINNABAR = new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
     public static final Block ORE_QUARTZ = new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
+    public static final Block CRUCIBLE = new Crucible();
 
 
 
@@ -30,6 +32,7 @@ public class ModBlocks {
         registerBlock("ore_amber", ORE_AMBER);
         registerBlock("ore_cinnabar", ORE_CINNABAR);
         registerBlock("ore_quartz", ORE_QUARTZ);
+        registerBlock("crucible", CRUCIBLE);
     }
 
     public static void registerModBlocks() {
