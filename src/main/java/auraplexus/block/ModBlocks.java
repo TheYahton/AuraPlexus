@@ -18,7 +18,7 @@ public class ModBlocks {
     public static final Block ORE_AMBER = new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
     public static final Block ORE_CINNABAR = new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
     public static final Block ORE_QUARTZ = new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
-    public static final Block CRUCIBLE = new Crucible();
+    public static final Block CRUCIBLE = new Crucible(FabricBlockSettings.copyOf(Blocks.CAULDRON));
 
 
 

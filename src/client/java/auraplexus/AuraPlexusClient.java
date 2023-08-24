@@ -1,7 +1,6 @@
 package auraplexus;
 
 import auraplexus.block.ModBlocks;
-import auraplexus.block.custom.Crucible;
 import auraplexus.block.custom.OreCrystal;
 import auraplexus.item.ModItems;
 import net.fabricmc.api.ClientModInitializer;

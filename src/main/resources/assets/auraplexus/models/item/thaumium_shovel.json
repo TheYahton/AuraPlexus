@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "auraplexus:item/thaumium_shovel"
+  }
+}

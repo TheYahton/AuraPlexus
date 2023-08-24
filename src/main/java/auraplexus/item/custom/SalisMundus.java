@@ -32,7 +32,8 @@ public class SalisMundus extends Item {
             stack.setCount(stack.getCount()-1); // decrease items count by 1
             world.removeBlock(pos, false); // delete bookshelf
             world.spawnEntity(new ItemEntity(world, x, y, z,
-                    ModItems.MIRACULONOMICON.getDefaultStack())); // Spawn Thaumonomicon at pos.
+                    ModItems.MIRACULONOMICON.getDefaultStack(),
+                    0, 0, 0)); // Spawn Thaumonomicon at pos.
 
             return ActionResult.SUCCESS;
         }

@@ -4,6 +4,7 @@
         "auraplexus:ore_crystal",
         "auraplexus:ore_amber",
         "auraplexus:ore_cinnabar",
-        "auraplexus:ore_quartz"
+        "auraplexus:ore_quartz",
+        "auraplexus:crucible"
     ]
 }

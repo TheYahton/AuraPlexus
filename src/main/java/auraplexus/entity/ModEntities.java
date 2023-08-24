@@ -2,7 +2,6 @@ package auraplexus.entity;
 
 import auraplexus.AuraPlexus;
 import auraplexus.block.ModBlocks;
-import auraplexus.entity.ArcaneWorkbenchEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
